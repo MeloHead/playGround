@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: PlayGround</title>
+    <style>
+        html{
+            margin:0px;
+        }
+        #container{
+            width:970px;
+            height: auto;
+        }
+        .boxes{
+            display:inline-block;
+            background-color: rgb(159,197,248);
+            height: 100px;
+            width: 100px;
+            margin:10px;
+            border: solid black 1px;
+        }
+        
+        h1, h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id='container'>
+    <div>
+        <h1>we have connected to the html of playground.html</h1>
+        <h2>Welcome!</h2>
+        
+            {% for x in range(0, amount)%}
+            <div class='boxes' style='background-color: {{color}}'></div>
+            {% endfor %}
+    </div>
+</body>
+</html>
